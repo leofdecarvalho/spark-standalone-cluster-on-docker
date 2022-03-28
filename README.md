@@ -15,6 +15,9 @@ But here is possible to store data with Delta Lake on the shared workspace.
 curl -LO https://raw.githubusercontent.com/leofdecarvalho/spark-standalone-cluster-on-docker/master/docker-compose.yml
 docker-compose up
 ```
+There are 2 options to put the examples that exist on this repository:
+1. Copy all the content of the directory "workspace" on the same directory where the docker-compose.yml was downloaded before execute "docker-compose up".
+2. Import all the content of the directory "workspace" on Jupyter Notebook after the service has been started with "docker-compose up".
 
 See https://github.com/cluster-apps-on-docker/spark-standalone-cluster-on-docker to learn how to build or customize the image,
 

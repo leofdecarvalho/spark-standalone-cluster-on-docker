@@ -92,7 +92,8 @@ function buildImages() {
   then
     docker build \
       --build-arg build_date="${BUILD_DATE}" \
-      --build-arg scala_version="${SCALA_VERSION}" \
+      --build-arg spark_version="${SPARK_VERSION}" \
+      --build-arg hadoop_version="${HADOOP_VERSION}" \
       -f docker/base/Dockerfile \
       -t base:latest .
   fi

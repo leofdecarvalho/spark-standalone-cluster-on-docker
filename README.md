@@ -2,8 +2,8 @@
 
 ## Introduction
 
-This project was based on the work https://github.com/cluster-apps-on-docker/spark-standalone-cluster-on-docker  (> **André Perez** - [dekoperez](https://twitter.com/dekoperez) - andre.marcos.perez@gmail.com)
-But here there is possible store data with Delta Lake on the shared workspace.
+This project was based on the work https://github.com/cluster-apps-on-docker/spark-standalone-cluster-on-docker  (> **André Perez** - [dekoperez](https://twitter.com/dekoperez) - andre.marcos.perez@gmail.com).
+But here there is possible data storage with Delta Lake on the shared workspace.
 
 
 <p align="center"><img src="docs/image/cluster-architecture.png"></p>

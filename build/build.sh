@@ -20,13 +20,11 @@ SPARK_VERSION_MAJOR=${SPARK_VERSION:0:1}
 if [[ "${SPARK_VERSION_MAJOR}" == "2" ]]
 then
   HADOOP_VERSION="2.7"
-  SCALA_VERSION="2.11.12"
-  SCALA_KERNEL_VERSION="0.6.0"
+  DELTA_LAKE_VERSION="0.7"
 elif [[ "${SPARK_VERSION_MAJOR}"  == "3" ]]
 then
   HADOOP_VERSION="3.2"
-  SCALA_VERSION="2.12.10"
-  SCALA_KERNEL_VERSION="0.10.9"
+  DELTA_LAKE_VERSION="1.1.0"
 else
   exit 1
 fi
@@ -127,10 +125,9 @@ function buildImages() {
   then
     docker build \
       --build-arg build_date="${BUILD_DATE}" \
-      --build-arg scala_version="${SCALA_VERSION}" \
       --build-arg spark_version="${SPARK_VERSION}" \
       --build-arg jupyterlab_version="${JUPYTERLAB_VERSION}" \
-      --build-arg scala_kernel_version="${SCALA_KERNEL_VERSION}" \
+      --build-arg delta_lake_version="${DELTA_LAKE_VERSION}" \
       -f docker/jupyterlab/Dockerfile \
       -t jupyterlab:${JUPYTERLAB_VERSION}-spark-${SPARK_VERSION} .
   fi

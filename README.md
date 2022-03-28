@@ -35,4 +35,4 @@ docker-compose up
 | Component      | Version                 | Docker Tag                                           |
 | -------------- | ----------------------- | ---------------------------------------------------- |
 | Apache Spark   | 2.4.0 \| 2.4.4 \| 3.0.0 | **\<spark-version>**                                 |
-| JupyterLab + [Python Kernel](https://github.com/CybercentreCanada/jupyterlab-sql-editor/blob/main/CONTRIBUTING.md)    | 2.1.4 \| 3.0.0          | **\<jupyterlab-version>**-spark-**\<spark-version>** |
+| JupyterLab + [Sql Editor](https://github.com/CybercentreCanada/jupyterlab-sql-editor/blob/main/CONTRIBUTING.md)    | 2.1.4 \| 3.0.0          | **\<jupyterlab-version>**-spark-**\<spark-version>** |

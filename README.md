@@ -12,7 +12,7 @@ But here there is possible data storage with Delta Lake on the shared workspace.
 ## TL;DR
 
 ```bash
-curl -LO https://raw.githubusercontent.com/cluster-apps-on-docker/spark-standalone-cluster-on-docker/master/docker-compose.yml
+curl -LO https://raw.githubusercontent.com/leofdecarvalho/spark-standalone-cluster-on-docker/master/docker-compose.yml
 docker-compose up
 ```
 
